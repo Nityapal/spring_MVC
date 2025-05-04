@@ -41,6 +41,14 @@ public class HomeController {
 		mod.addObject("name", "umbrella");
 		LocalDateTime now= LocalDateTime.now();
 		mod.addObject("time", now);
+		
+		//marks
+		List<Integer> ls= new ArrayList<Integer>();
+		ls.add(11);
+		ls.add(12);
+		ls.add(13);
+		mod.addObject("marks",ls);
+		
 		//setting view name
 		mod.setViewName("help");
 		return mod;
