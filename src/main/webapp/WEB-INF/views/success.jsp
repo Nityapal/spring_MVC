@@ -10,9 +10,11 @@
 </head>
 <body>
 
-	<h1>Welcome, ${name}</h1>
-	<h1>Your email is ${email}</h1>
-	<h1>Password is ${password}; Try to secure it</h1>
+<h1>${Header}</h1>
+
+	<h1>Welcome, ${user.userName}</h1>
+	<h1>Your email is ${user.email}</h1>
+	<h1>Password is ${user.password}, Try to secure it</h1>
 
 </body>
 </html>
