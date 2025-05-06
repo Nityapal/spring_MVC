@@ -11,6 +11,7 @@
 <body>
 
 <h1>${Header}</h1>
+<h1 style="color:green">${msg}</h1>
 
 	<h1>Welcome, ${user.userName}</h1>
 	<h1>Your email is ${user.email}</h1>
