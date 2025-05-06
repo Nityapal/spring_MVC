@@ -49,6 +49,11 @@ public class ContactController {
 	public String handleForm(@ModelAttribute User user,Model model) {
 
 		System.out.println(user);
+		
+		if(user.getUserName().isBlank()) {
+			return "redirect:/contact";
+		}
+		
 		int id= this.userService.createUser(user);
 		model.addAttribute("msg", "user created with id "+id+" successfully");
 		return "success";
